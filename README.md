@@ -43,7 +43,7 @@ svgCode = multiavatar(avatarId, True, { "part": "11", "theme": "C" })
 
 To catch bugs, the representation of tests should be visual because not all bugs have programmatic errors. For example, if an equal length color array is mixed, or a double semicolon appears in a color string, in such cases an error is not thrown, but the visual representation of avatar(-s) becomes broken.
 
-There are two types of tests, currently available in `index.html` and `other.html` files. Simply open these files in your browser. Build these files using the PHP build scripts in the `test` folder.
+There are two types of tests, currently available in `index.html` and `other.html` files. Simply open these files in your browser. Build these files by running the Python build scripts in the `test` folder.
 
 In the `index.html` file, visually presented are all 48 base versions or avatars. If all 48 base versions are good, then it means that all 12 billion are also good, because the 12 billion are constructed from different parts of the 48 base versions. All avatars in this file should look exactly the same as in the JavaScript repository's `\svg\index.html` file.
 
