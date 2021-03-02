@@ -1,0 +1,6 @@
+/tests/*.html
+/multiavatar/__pycache__
+
+/build
+/dist
+/multiavatar.egg-info
