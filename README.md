@@ -43,7 +43,7 @@ svgCode = multiavatar(avatarId, True, { "part": "11", "theme": "C" })
 
 To catch bugs, the representation of tests should be visual because not all bugs have programmatic errors. For example, if an equal length color array is mixed, or a double semicolon appears in a color string, in such cases an error is not thrown, but the visual representation of avatar(-s) becomes broken.
 
-There are two types of tests, currently available in `index.html` and `other.html` files. Simply open these files in your browser. Build these files by running the Python build scripts in the `test` folder.
+There are two types of tests, currently available in `index.html` and `other.html` files. Simply open these files in your browser. Build these files by running the Python build scripts in the `tests` folder.
 
 In the `index.html` file, visually presented are all 48 base versions or avatars. If all 48 base versions are good, then it means that all 12 billion are also good, because the 12 billion are constructed from different parts of the 48 base versions. All avatars in this file should look exactly the same as in the JavaScript repository's `\svg\index.html` file.
 
@@ -59,15 +59,7 @@ To get an avatar as SVG code, add the avatar's ID to the URL:
 ```
 https://api.multiavatar.com/Binx Bond
 ```
-JavaScript API call example to get SVG code:
 
-```
-let avatarId = 'Binx Bond'
-fetch('https://api.multiavatar.com/'
-+JSON.stringify(avatarId))
-  .then(res => res.text())
-  .then(svg => console.log(svg))
-```
 To get an avatar as SVG file, add .svg to the end of the URL:
 
 ```
